@@ -1,6 +1,6 @@
 /* CSS Entry Point */
-
 $side-bar-width: 300px;
+$blue-font: #1E91B8;
 
 .app {
 	width: 950px;
@@ -30,12 +30,19 @@ footer {
 }
 
 header  {
-
 	h1 {
 	font-family: 'Inika', serif;
-	font-size: 2.5em;
+	font-size: 3em;
 	font-weight: lighter;
 	color: #F06600;
 	}
-	
+	.sell-register {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.1em;
+	color: $blue-font;
+		:last-of-type {
+		font-weight: lighter;
+		border-box: darken(${blue-font}, 50%);
+		}
+	}
 }

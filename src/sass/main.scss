@@ -16,6 +16,7 @@ header, footer {
 	background: darken(white, 10%);
 }
 
+// LAYOUT///////////////
 aside {
 	float: left;
 	width: $side-bar-width;
@@ -29,24 +30,39 @@ main {
 footer {
 	clear: both;
 }
+////////////////////////
 
 header  {
 	h1 {
+	// border: 2px solid red;
 	font-family: 'Inika', serif;
 	font-size: 3em;
 	font-weight: lighter;
 	color: #F06600;
 	}
 	.sell-register {
+	float: right;
+	// border: 2px solid red;
 	font-family: 'Lato', sans-serif;
 	font-size: 1.1em;
 	color: $blue-font;
-	&:last-child {
-	border: 2px solid red;
-	}
+		p:last-child {
+		border: 1px solid $blue-font;
+		display: inline-block; 
+		}
 	}
 }
 
-.top-header {
-	border-bottom: 1px solid black;
+.content {
+	aside {
+		background-color: pink;
+	}
+	main {
+		background-color: lighten(green, 60%);
+	}
 }
+
+//listing styling
+
+
+

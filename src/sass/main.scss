@@ -2,6 +2,10 @@
 $side-bar-width: 300px;
 $blue-font: #1E91B8;
 $grey-cart: #666666;
+$product-border: #E1E3DF;
+$seller: #9D9A9D;
+$price: #7FC01D;
+$background: #F5F5F1;
 
 .app {
 	width: 950px;
@@ -58,11 +62,41 @@ header  {
 		background-color: pink;
 	}
 	main {
-		background-color: lighten(green, 60%);
+		background-color: $background;
+		display: flex;
+		flex-wrap: wrap;
 	}
 }
 
 //listing styling
+.listing {
+	border: 1px solid $product-border;
+	margin: 20px;
+	width: 170px;
+	font-family: Helvetica;
+	font-weight: lighter;
+	font-size: .8em;
+	.listing-info {
+	padding: 4px;
+	}
+	span:before {
+	content: "$";
+	}
+	span:after {
+	content: " USD";
+	}
+	.title {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	}
+	.seller {
+	color: $seller;
+	}
+	.price {
+	color: $price;
+	}
+}
 
 
 

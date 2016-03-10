@@ -10,12 +10,10 @@ function createListing(product) {
 
 	return `
 	<div class="listing">
-		<div class="picture"><img src="${picture}" alt="photo"></div>
-		<div class="listing-info">
-			<div class="title">${product.title}</div>
-			<div class="seller">${product.Shop.shop_name}</div>
-			<div class="price"><span>${product.price}</span></div>
-		</div>
+		<div class="picture"><img src=${picture} height="179.55px" width="226.1px" alt="photo"></div>
+		<div class="title">${product.title}</div>
+		<div class="seller">${product.Shop.shop_name}</div>
+		<div class="price"><span>${product.price}</span></div>
 	</div>
 	`; 
 };

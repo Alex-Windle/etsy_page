@@ -8,38 +8,51 @@ $price: #7FC01D;
 $background: #F5F5F1;
 $search-button-blue: #40A7C7;
 
-////////// HEADER STYLING ///////
+////////// SIGN-IN/CART ICON STYLING ///////
+
+////////// ETSY/SEARCHBAR STYLING ///////
 
 header  {
 	border-bottom: .5px solid lighten($grey-cart, 30%);
 	.top-header {
-		border: 2px solid red;	
+	border: 2px solid red;	
 	}
 	.top-header-left {
-	border: 1px solid blue;	
+	border: 1px solid blue;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	line-height: 10px;
 		h1 {
-		border: 2px solid black;
+		// border: 2px solid black;
+		margin-left: 35px;
 		font-family: 'Inika', serif;
-		font-size: 3em;
+		font-size: 2.5em;
 		font-weight: lighter;
 		color: #F06600;
 		display: inline-block;
 		}
 		form {
+		// border: 2px solid black;
 		border: .3px solid lighten($grey-cart, 25%);
 		border-radius: 4px;
 		overflow: hidden;
 		display: inline-block;
-		margin-left: 20px;
+
+		//*** Trick to center horizontally:
+		//*** after applying flex box, 
+		//*** manipulate margins. Awesome! 
+
+		margin: auto 0px auto 20px;
 		input[type="text"] {
-		// padding: 0;
+		///////**************BOX SHADOW**************
 		float:left;
 		border: none;
 		// border: 1px solid red;
 		padding: 6px;
 		width: 300px;
 		}
-		input[placeholder="Search"]{
+		input[placeholder="artichoke"]{
 		font-family: Helvetica;
 		font-size: 14px;
 		font-weight: lighter;
@@ -89,7 +102,7 @@ body {
 }
 
 header {
-	background: lighten(pink, 10%);
+	background: lighten(green, 70%);
 	width: 100%;
 }
 

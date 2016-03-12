@@ -7,6 +7,8 @@ $seller: #9D9A9D;
 $price: #7FC01D;
 $background: #F5F5F1;
 $search-button-blue: #40A7C7;
+////Problem: link from local directory/////
+////Sol: link from URL//////
 
 ////////// SIGN-IN/CART ICON STYLING ///////
 
@@ -15,10 +17,14 @@ $search-button-blue: #40A7C7;
 header  {
 	border-bottom: .5px solid lighten($grey-cart, 30%);
 	.top-header {
-	border: 2px solid red;	
+	// border: 2px solid red;
+	border-bottom: .5px solid lighten($grey-cart, 30%);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;	
 	}
 	.top-header-left {
-	border: 1px solid blue;
+	// border: 1px solid blue;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
@@ -27,7 +33,7 @@ header  {
 		// border: 2px solid black;
 		margin-left: 35px;
 		font-family: 'Inika', serif;
-		font-size: 2.5em;
+		font-size: 2.35em;
 		font-weight: lighter;
 		color: #F06600;
 		display: inline-block;
@@ -76,20 +82,46 @@ header  {
 		}
 	}
 	.cart {
-	border: 1px solid blue;	
+	// border: 1px solid blue;
+	width: 300px;	
+	display: flex;
+	flex-direction: row;
 	}
 	.sell-register {
 	// float: right;
 	// border: 2px solid red;
 	font-family: 'Lato', sans-serif;
-	font-size: 1.1em;
+	font-size: .95em;
+	font-weight: lighter;
+	letter-spacing: .5px;
 	color: $blue-font;
-		p:last-child {
+	display: inline-block;
+	display: flex;
+	flex-direction: row;
+
+		p:first-child {
+		// border: 1px solid red;
+		padding: 7px;
+		}
+		p:nth-child(2) {
+		// border: 1px solid black;
+		padding: 7px;
+		}
+		p:last-child { // "sign in"
 		border: 1px solid $blue-font;
 		display: inline-block; 
+		border-radius: 4px;
+		padding: 7px;
 		}
-	}
-}
+		} // end of sell-register
+	.cart-icon p {
+	// border: 1px solid red;
+	display: inline-block;
+	margin: 0;
+	padding: 25px 10px;
+	} // end of cart-icon
+} // end of header
+
 
 ////////// MAIN LAYOUT ////////
 .app {
@@ -133,7 +165,7 @@ footer {
 ////////////////////////
 
 .content {
-	border: 2px solid red;
+	// border: 2px solid red;
 	overflow: hidden;
 	aside {
 	background-color: $background;

@@ -7,6 +7,7 @@ $seller: #9D9A9D;
 $price: #7FC01D;
 $background: #F5F5F1;
 $search-button-blue: #40A7C7;
+$nav-font: #777784;
 ////Problem: link from local directory/////
 ////Sol: link from URL//////
 
@@ -16,6 +17,23 @@ $search-button-blue: #40A7C7;
 
 header  {
 	border-bottom: .5px solid lighten($grey-cart, 30%);
+	nav {
+	margin: 0 30px;
+		ul{
+		list-style: none;
+		padding: 0;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		li {
+		font-family: Helvetica;
+		font-size: .95em;
+		// font-weight: lighter;
+		letter-spacing: .4px;
+		color: $nav-font;
+		}
+		}
+	}
 	.top-header {
 	// border: 2px solid red;
 	border-bottom: .5px solid lighten($grey-cart, 30%);
@@ -134,7 +152,7 @@ body {
 }
 
 header {
-	background: lighten(green, 70%);
+	// background: lighten(green, 70%);
 	width: 100%;
 }
 

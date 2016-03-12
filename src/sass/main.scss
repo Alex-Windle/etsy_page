@@ -6,9 +6,81 @@ $product-border: #E1E3DF;
 $seller: #9D9A9D;
 $price: #7FC01D;
 $background: #F5F5F1;
+$search-button-blue: #40A7C7;
 
+////////// HEADER STYLING ///////
+
+header  {
+	border-bottom: .5px solid lighten($grey-cart, 30%);
+	.top-header {
+		border: 2px solid red;	
+	}
+	.top-header-left {
+	border: 1px solid blue;	
+		h1 {
+		border: 2px solid black;
+		font-family: 'Inika', serif;
+		font-size: 3em;
+		font-weight: lighter;
+		color: #F06600;
+		display: inline-block;
+		}
+		form {
+		border: .3px solid lighten($grey-cart, 25%);
+		border-radius: 4px;
+		overflow: hidden;
+		display: inline-block;
+		margin-left: 20px;
+		input[type="text"] {
+		// padding: 0;
+		float:left;
+		border: none;
+		// border: 1px solid red;
+		padding: 6px;
+		width: 300px;
+		}
+		input[placeholder="Search"]{
+		font-family: Helvetica;
+		font-size: 14px;
+		font-weight: lighter;
+		letter-spacing: .6px;
+		//******Change font color???????*************//
+		//******Lighten box shadow???????*************//
+		padding: 8px 0px 8px 15px;
+		}
+		input[type="button"] {
+		// padding: 0;
+		float: right;
+		// border: 1px solid green;
+		border: none;
+		background-color: $search-button-blue;
+		padding: 8px 20px;
+		font: Arial;
+		font-size: 14px;
+		font-weight: bolder;
+		color: white;
+		}
+		}
+	}
+	.cart {
+	border: 1px solid blue;	
+	}
+	.sell-register {
+	// float: right;
+	// border: 2px solid red;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.1em;
+	color: $blue-font;
+		p:last-child {
+		border: 1px solid $blue-font;
+		display: inline-block; 
+		}
+	}
+}
+
+////////// MAIN LAYOUT ////////
 .app {
-	width: 1100px;
+	// width: 1100px;
 	margin: auto;
 }
 
@@ -16,11 +88,22 @@ body {
 	margin: 0;
 }
 
-header, footer {
+header {
+	background: lighten(pink, 10%);
+	width: 100%;
+}
+
+.content {
+	width: 1100px;
+	margin: auto;
+	background: lighten(lime, 40%);
+}
+
+footer {
 	background: darken(white, 10%);
 }
 
-// LAYOUT///////////////
+//////////// LAYOUT///////////////
 aside {
 	float: left;
 	width: $side-bar-width;
@@ -36,27 +119,6 @@ footer {
 }
 ////////////////////////
 
-header  {
-	h1 {
-	// border: 2px solid red;
-	font-family: 'Inika', serif;
-	font-size: 3em;
-	font-weight: lighter;
-	color: #F06600;
-	}
-	.sell-register {
-	float: right;
-	// border: 2px solid red;
-	font-family: 'Lato', sans-serif;
-	font-size: 1.1em;
-	color: $blue-font;
-		p:last-child {
-		border: 1px solid $blue-font;
-		display: inline-block; 
-		}
-	}
-}
-
 .content {
 	border: 2px solid red;
 	overflow: hidden;
@@ -67,19 +129,24 @@ header  {
 	background-color: $background;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 	}
 }
 
 //listing styling
 .listing {
 	border: 1px solid $product-border;
-	// border-radius: 10px;
+	border-radius: 5px;
 	background: white;
 	margin: 10px;
 	width: 226.1px;
 	font-family: Helvetica;
 	font-weight: lighter;
 	font-size: .8em;
+	overflow: hidden; //hide pic corners
+	&:hover {
+	content: url(http://fillmurray.com/200/300);
+	}
 	span:before {
 	content: "$";
 	}
@@ -90,18 +157,30 @@ header  {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	padding-top: 4px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 4px;
 	}
 	.seller {
 	color: $seller;
-	border: 1px solid blue;
+	// border: 1px solid blue;
 	display: inline;
-	font-size: .85em;
+	font-size: .9em;
+	padding-bottom: 4px;
+	padding-left: 5px;
+	// padding-right: 5px;
 	}
 	.price {
 	color: $price;
-	border: 1px solid green;
+	// border: 1px solid green;
 	display: inline;
-	font-size: .85em;
+	font-size: .9em;
+	font-weight: bolder;
+	float: right;
+	padding-bottom: 4px;
+	// padding-left: 5px;
+	padding-right: 5px;
 	}
 }
 

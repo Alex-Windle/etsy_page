@@ -174,7 +174,49 @@ footer {
 aside {
 	float: left;
 	width: $side-bar-width;
-}
+	font-family: 'Cabin', sans-serif;
+	font-size: 13.5px;
+	color: $blue-font;
+	.bold {
+	font-weight: bolder;
+	color: black;
+	}
+	#big-box-one {
+	// border: 1px solid red;
+	margin-left: 15px;
+	#small-box-one {
+	border: 1px solid $product-border;
+	border-radius: 5px;
+	background: white;
+	p {
+	padding-left: 15px;
+	}//end p 
+	ul {
+	list-style: none;
+	padding-left: 25px;
+	letter-spacing: .6px;
+	li {
+	padding-bottom: 5px;
+	&:hover {
+	text-decoration: underline;
+	}//end hover
+	}//end li 
+	}//end ul 
+	}//end smallboxone
+	}//end bigboxone
+	#big-box-two {
+	// border: 1px solid blue;
+	margin-left: 15px;
+	#small-box-two {
+	border: 1px solid $product-border;
+	border-radius: 5px;
+	background: white;
+	.sections {
+	border-bottom: 1px solid $product-border;
+	}// end sections
+	}// end smallboxtwo
+	}//end bigboxtwo
+} //end aside
 
 main {
 	float: right;
@@ -212,7 +254,7 @@ footer {
 	font-size: .8em;
 	overflow: hidden; //hide pic corners
 	&:hover {
-	content: url(http://fillmurray.com/200/300);
+	// content: url();
 	}
 	span:before {
 	content: "$";

@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>TIY Project</title>
+  <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Inika' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/main.css">
@@ -71,10 +72,11 @@
       <main></main>
 
 	  	<aside>
-        <div class="big-box" id="big-box1">
-	  		     <h4>Show results for:</h4>
-             <div class="small-box" id="small-box1">
-                  <h4>All categories</h4>
+        
+        <div id="big-box-one">
+	  		     <p class="bold">Show results for:</p>
+             <div class="small-box" id="small-box-one">
+                  <p class="bold">All categories</p>
                   <ul>
                       <li>Home & Living</li>
                       <li>Art & Collectibles</li>
@@ -95,30 +97,57 @@
              </div> <!--    end .small-box1   -->  
         </div> <!--    end .big-box1   -->
 
-        <div class="big-box" id="big=box2">
-              <h4>Refine your search</h4>
-              <div class="small-box" id="small-box2">
-                  <h4>Item type</h4>
-                  <p>All items</p>
-                  <p>Handmade</p>
-                  <p>Vintage</p>
+        <div id="big-box-two">
+              <p class="bold">
+                  Refine your search
+              </p>
+              <div class="small-box" id="small-box-two">
 
-                  <h4>Price ($)</h4>
-                  <p>to</p>
-
-                  <h4>Filter by color</h4>
-
-                  <h4>Ordering options</h4>
-                  <p>Accepts Etsy gift cards</p>
-                  <p>Customizable</p>
+                  <div class="sections">
+                      <p class="bold">Item type</p>
+                      
+                      <input type="radio" name="item type" value="All items">All items<br>
+                      <input type="radio" name="item type" value="Handmade">Handmade<br>
+                      <input type="radio" name="item type" value="Vintage">Vintage<br>
+                  </div> <!-- end .sections -->
 
 
-                  <h4>Shop location</h4>
-                  <p>Anywhere</p>
-                  <p>United States</p>
-                  <p>Choose a custom location</p>
+                  <div class="sections">
+                      <p class="bold">Price ($)</p>
+                      
+                      <form>
+                        <input type="text" placeholder="Low">
 
-                  <h4>Ship to</h4>
+                        <p>to</p>
+
+                        <input type="text" placeholder="High">
+                        <input type="submit" value="->">
+                      </form>
+                  </div> <!-- end .sections -->
+
+
+                  <div class="sections">
+                      <p class="bold">Filter by color</p>
+                   </div> <!-- end .sections -->
+
+                  <div class="sections">
+                      <p class="bold">Ordering options</p>
+                      <p>Accepts Etsy gift cards</p>
+                      <p>Customizable</p>
+                   </div> <!-- end .sections -->
+
+                   <div class="sections">
+                      <p class="bold">Shop location</p>
+                      <input type="radio" name="location" value="anywhere">Anywhere<br>
+                      <input type="radio" name="location" value="usa">United States<br>
+                      <p>Choose a custom location</p>
+                   </div> <!-- end .sections -->
+
+                   <div class="sections">
+                      <p class="bold">Ship to</p>
+                      <p>United States</p>
+                   </div> <!-- end .sections -->
+
              </div> <!--    end .small-box2   -->
         </div> <!--    end .big-box2    -->
 

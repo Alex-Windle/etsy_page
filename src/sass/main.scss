@@ -214,14 +214,24 @@ aside {
 	.sections {
 	border-bottom: 1px solid $product-border;
 		.price {
-		background-color: yellow;
-		form input[placeholder="Low"], input[placeholder="High"] {
+		form {
+		display: flex;
+		flex-direction: row;
+		input[placeholder="Low"], input[placeholder="High"] {
 		font-size: 14px;
 		border-radius: 4px;
 		border: 1px solid $product-border;
 		width: 70px;
 		padding: 10px 0px 10px 10px;
 		}//end #price form input placeh...
+		#btn {
+		border: 1px solid $product-border;
+		border-radius: 4px;
+		background-color: white;
+		height: 43px;
+		width: 43px;
+		}//end form input type submit 
+	}//end form
 	}//end .price
 		.color-choices ul {
 		list-style: none;

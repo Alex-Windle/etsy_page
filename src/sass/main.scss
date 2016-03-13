@@ -213,16 +213,46 @@ aside {
 	background: white;
 	.sections {
 	border-bottom: 1px solid $product-border;
+		.ship-to {
+		
+		.ship-to-menu {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		// align-content: flex-start;
+		border: 1px solid $product-border;
+		border-radius: 4px;
+		color: black;
+		width: 250px;
+		padding: 10px;
+		// height: 30px;
+		p {
+		// background-color: red;
+		// height: 15px;
+		margin: 0;
+		}//p
+		img {
+		// background-color: yellow;
+		}//img
+		}//end ship-to ship-to-menu
+		}//end ship-to
 		.price {
 		form {
 		display: flex;
 		flex-direction: row;
+		// margin-left: 20px;
+		margin-right: 20px;
+		margin-bottom: 15px;
+		justify-content: space-around;
+		p {
+		color: black;
+		}//end p 
 		input[placeholder="Low"], input[placeholder="High"] {
 		font-size: 14px;
 		border-radius: 4px;
 		border: 1px solid $product-border;
 		width: 70px;
-		padding: 10px 0px 10px 10px;
+		padding: 7px 0px 7px 7px;
 		}//end #price form input placeh...
 		#btn {
 		border: 1px solid $product-border;

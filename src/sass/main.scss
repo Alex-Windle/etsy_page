@@ -211,10 +211,32 @@ aside {
 	border: 1px solid $product-border;
 	border-radius: 5px;
 	background: white;
-	.sections {
+	.divider {
+	height: 1px;
+	width: 90%;
 	border-bottom: 1px solid $product-border;
+	margin: 0 auto;
+	}//end divider
+	.sections {
+	// border-bottom: 1px solid $product-border;
+	padding: 10px;
+	letter-spacing: .5px;
+	.itm-typ {
+	input {
+	margin-bottom: 10px;
+	}//end input
+	}//end itm-typ
+	.shoplctn {
+	input {
+	margin-bottom: 10px;
+	}
+	}//end shoplctn
+	.order-options {
+	label input {
+	margin-bottom: 10px;
+	}//labelinput
+	}//end orderoptions
 		.ship-to {
-		
 		.ship-to-menu {
 		display: flex;
 		flex-direction: row;
@@ -223,7 +245,7 @@ aside {
 		border: 1px solid $product-border;
 		border-radius: 4px;
 		color: black;
-		width: 250px;
+		width: 240px;
 		padding: 10px;
 		// height: 30px;
 		p {
@@ -254,12 +276,15 @@ aside {
 		width: 70px;
 		padding: 7px 0px 7px 7px;
 		}//end #price form input placeh...
-		#btn {
+		.right-arrow {
 		border: 1px solid $product-border;
 		border-radius: 4px;
 		background-color: white;
 		height: 43px;
 		width: 43px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		}//end form input type submit 
 	}//end form
 	}//end .price

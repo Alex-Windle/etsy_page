@@ -11,6 +11,98 @@ $nav-font: #777784;
 ////Problem: link from local directory/////
 ////Sol: link from URL//////
 
+/////////// FOOTER STYLING //////////////
+footer {
+	background-color: $background;
+	font-family: Helvetica;
+	color: $blue-font;
+	font-size: 13px;
+	letter-spacing: .5px;
+	.big-block {
+	padding: 0 60px 0 60px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	// align-content: center;
+		.blk {
+		// border: 1px solid blue;
+		height: 300px;
+		width: 160px;
+		padding-top: 40px;
+		p:first-child {
+		color: black;
+		}
+		.blk-one {
+		input[type="button"] {
+		background-color: $search-button-blue;
+		}
+		input[value="Open a shop"] {
+		color: white;
+		font-size: 13px;
+		border: 1px solid $grey-cart;
+		border-radius: 2px;
+		padding: 4px 15px;
+		margin-bottom: 20px;
+		}
+		#sell {
+		color: black;
+		}
+		}//blk 1 
+		.blk-two {
+
+		}
+		.blk-three {
+
+		}
+		.blk-four {
+
+		}
+		.blk-five {
+		ul {
+		list-style: none;
+		padding: 0;
+		// display: flex;
+		}
+		li {
+		display: flex;
+		flex-direction: row;
+		// justify-content: center;
+		align-content: flex-start;
+		p:first-child {
+		color:black;
+		margin-bottom: 15px;
+		}
+		p {
+			margin-top: .5px;
+		}
+		img {
+			// margin-top: 10px;
+			margin-right: 5px;
+		}//img		
+		}//li
+		}//blk5
+		}//blk
+		}//big-block
+	.separator {
+	height: 3px;
+	width: 90%;
+	border: 1px solid black;
+	}//sep
+	.bottom-div {
+		.btm-div-left {
+		border: 1px solid red;
+		}
+		.btm-div-right {
+		border: 1px solid red;
+		}
+	}//bottom div
+	.copyrights {
+	display: flex;
+	flex-direction: flex-start;
+	justify-content: center;
+	}//copyrts
+}//footer
+
 ////////// SIGN-IN/CART ICON STYLING ///////
 
 ////////// ETSY/SEARCHBAR STYLING ///////
@@ -166,10 +258,6 @@ header {
 	// background: lighten(orange, 40%);
 }
 
-footer {
-	background: darken(white, 10%);
-}
-
 //////////// LAYOUT///////////////
 aside {
 	float: left;
@@ -225,13 +313,22 @@ aside {
 	input {
 	margin-bottom: 10px;
 	}//end input
+	input[type="radio"] {
+	margin-right: 7px;
+	}//end input type radio
 	}//end itm-typ
 	.shoplctn {
+	input[type="radio"] {
+	margin-right: 7px;
+	}//end input typ rad
 	input {
 	margin-bottom: 10px;
 	}
 	}//end shoplctn
 	.order-options {
+	label input[type="checkbox"] {
+	margin-right: 7px;
+	}//end lab input chckbx
 	label input {
 	margin-bottom: 10px;
 	}//labelinput
@@ -299,6 +396,7 @@ aside {
 		border: 1px solid $product-border;
 		border-radius: 3px;
 		margin: 2px;
+		margin-right: 5px;
 		&:first-child {
 		background-color: red;
 		}//end red
